@@ -1,0 +1,29 @@
+.container-1 {
+
+    height: 100%;
+    width: 100%;
+}
+.container-1-card {
+
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.7);
+    height: max-content;
+    margin: 10px;
+    width: max-content;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.container-1-card img{
+
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+}
+.container-1-card h6{
+
+    margin: 10px;
+}
+.avatarDiv {
+
+    text-align: center;
+}
