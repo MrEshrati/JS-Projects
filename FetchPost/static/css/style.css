@@ -1,0 +1,21 @@
+.input-div input{
+
+    border: 1px solid #2cac2c;
+    border-radius: 15px;
+    height: 35px;
+}
+.input-div label{
+
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.input-div input,label{
+
+    display: block;
+    margin-left: 3%;
+}
+.btn{
+
+    margin-left: 3%;
+}
