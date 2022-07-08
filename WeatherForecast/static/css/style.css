@@ -1,0 +1,72 @@
+.body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('https://source.unsplash.com/1600x900/?nature');
+}
+
+.weather-card {
+
+    color: white;
+    font-size: 14px;
+    height: fit-content;
+    width: fit-content;
+    padding: 4em;
+    background-color: rgba(34, 34, 34, 0.9);
+    border-radius: 20px;
+    font-family: inherit;
+    align-items: center;
+}
+
+.visible {
+
+    display: none;
+}
+
+.search-div {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.search-icon {
+
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 8px;
+}
+
+.search-icon:hover {
+
+    background-color: #FFFFFFd0;
+    transition: 0.2s ease-in-out;
+}
+
+.search-bar {
+
+    background-color:#FFFFFFd0;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    color: #222;
+    font-family: inherit;
+    padding: 10px 30px;
+}
+
+.search-bar:hover:focus {
+
+    background-color: white;
+    transition: 0.2s ease-in-out;
+}
+
+.img-div {
+
+    align-items: center;
+    display: flex;
+}
