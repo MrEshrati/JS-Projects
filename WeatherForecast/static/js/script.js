@@ -1,15 +1,16 @@
 let WeatherCall = {
 
-    apiKey : 'REDACTED',
-    fetchWeather : function(city){
-
-        fetch('https://api.openweathermap.org/data/2.5/weather?q='
-        + city
-        + '&units=metric&appid='
-        + this.apiKey
-         ).then((response) => response.json())
-         .then((data) => this.DisplayWeather(data))
-         .catch((error) => console.log(error));
+    fetchWeather : async function(city){
+        try {
+            const response = await fetch('/api/weather?' + new URLSearchParams({ city }));
+            const data = await response.json();
+            if (!response.ok) {
+                throw new Error(data.message);
+            }
+            this.DisplayWeather(data);
+        } catch (error) {
+            console.error(error.message);
+        }
     },
     DisplayWeather : function(data){
 

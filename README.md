@@ -15,4 +15,8 @@ A collection of small browser exercises built with HTML, CSS, and vanilla JavaSc
 
 Open an example's `index.html`. For request-based examples, serve the repository over local HTTP, for example with `python -m http.server 8000`, then open the example at `http://localhost:8000`. Use a PHP server for `FetchPost`, for example `php -S localhost:8000` from the repository root.
 
-Examples that call hosted APIs depend on those services and their current access requirements. Use a separate development credential for weather requests and keep private keys out of browser code.
+Examples that call hosted APIs depend on those services and their current access requirements.
+
+## Run the weather demo
+
+Set `OPENWEATHER_API_KEY` in the server environment. With Node.js 18 or newer, run `node WeatherForecast/server.js` from the repository root and open `http://127.0.0.1:8000`. The browser calls the local weather endpoint and the server makes the OpenWeather request. The server binds to localhost for this demo.
