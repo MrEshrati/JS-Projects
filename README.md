@@ -20,3 +20,7 @@ Examples that call hosted APIs depend on those services and their current access
 ## Run the weather demo
 
 Set `OPENWEATHER_API_KEY` in the server environment. With Node.js 18 or newer, run `node WeatherForecast/server.js` from the repository root and open `http://127.0.0.1:8000`. The browser calls the local weather endpoint and the server makes the OpenWeather request. The server binds to localhost for this demo.
+
+## License
+
+The [MIT License](LICENSE) covers MrEshrati's original code and documentation outside `JavaScript_Challenge/`. Third-party examples, images, and audio are outside this grant.
